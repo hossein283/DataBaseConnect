@@ -42,6 +42,7 @@ class do_select extends database
                 return $data;
             }
         }
+        $result->execute();
     }
 }
 ?>
