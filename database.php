@@ -36,13 +36,14 @@ class do_select extends database
         if($result->rowCount() >= 1){
             if($fetch==''){
                 $data = $result->fetchAll(PDO::FETCH_ASSOC);
+                $result->execute();
                 return $data;
             }else{
                 $data = $result->fetch(PDO::FETCH_ASSOC);
+                $result->execute();
                 return $data;
             }
         }
-        $result->execute();
     }
 }
 ?>
