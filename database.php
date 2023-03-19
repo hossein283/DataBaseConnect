@@ -1,5 +1,5 @@
 <?php
-
+namespace DataBaseoopConnect;
 class database
 {
     private $dbname;
